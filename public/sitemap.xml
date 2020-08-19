@@ -3,33 +3,98 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publication-type/0/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <loc>/project/external_project/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <loc>/project/internal_project/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/other-pipelines/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <loc>/tag/germline-variants/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <loc>/tag/nextflow/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/pipelines/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/qc/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/qc/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/somatic-variants/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/3/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/qc/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/dr-ryan-cardenas/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/</loc>
-    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/source-themes/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,23 +108,11 @@
   </url>
   
   <url>
-    <loc>/authors/</loc>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>/author/dr-daniel-brewer/</loc>
-  </url>
-  
-  <url>
-    <loc>/author/dr-ryan-cardenas/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+    <loc>/author/dr-dan-brewer/</loc>
   </url>
   
   <url>
