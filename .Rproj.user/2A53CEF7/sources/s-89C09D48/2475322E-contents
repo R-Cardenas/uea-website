@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Dr Daniel Brewer
+title: Dr Dan Brewer
 
 # Username (this should match the folder name)
 authors:
