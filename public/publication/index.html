@@ -23,14 +23,14 @@
   
   
 
-  <meta name="author" content="Nelson Bighetti">
+  <meta name="author" content="Dr Ryan Cardenas">
 
   
   
   
     
   
-  <meta name="description" content="Professor of Artificial Intelligence">
+  <meta name="description" content="We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping.">
 
   
   <link rel="alternate" hreflang="en-us" href="/publication/">
@@ -250,11 +250,11 @@
   
   <meta property="og:site_name" content="Academic">
   <meta property="og:url" content="/publication/">
-  <meta property="og:title" content="Publications | Academic">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:title" content="Variant QC Pipeline | Academic">
+  <meta property="og:description" content="We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    
+    <meta property="og:updated_time" content="2020-09-01T00:00:00&#43;00:00">
   
 
   
@@ -271,7 +271,7 @@
 
 
 
-  <title>Publications | Academic</title>
+  <title>Variant QC Pipeline | Academic</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -554,7 +554,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>Publications</h1>
+  <h1>Variant QC Pipeline</h1>
 
   
 
@@ -568,8 +568,36 @@
     <div class="col-lg-12">
 
       
+      <div class="article-style"><p><br /></p>
+<p><img src="fastqc.jpg" alt=""></p>
+<hr>
+<p><br /></p>
+<p>Following the sequencing of samples, it is always essential to perform quality control (QC) steps prior to the main analysis - a number of sequencing artefacts including read errors, adaptor/primer retention and low quality read contamination is quite common in sequencing experiments. Sequencing errors can impact  downstream analyses of samples including gene expression and single base substitutions and insertions-deletions (indels) calling. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results.</p>
+<p><br /></p>
+<p><img src="QC_pipeline.png" alt="figure 1 - QC pipeline flowchart "></p>
+<p><br /></p>
+<p>We have developed pipelines that include the all the essential QC tools for both RNA and DNA (variant exome and WGS) sequencing experiments - summarised in figure 1. Irrespective of sample type, samples are first trimmed using TrimGalore, analysed by FastQC and aligned (cgpMAP and HISAT2 for DNA and RNA, respectively). The picard toolkit suite is also used to remove PCR and optical duplicates, give read insert sizes and alignment statistics.</p>
+<p><br /></p>
+<p><br /></p>
+<p>Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation.</p>
+<p><br /></p>
+<p>Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!! PUT IN REPORT !!</p>
+</div>
+      
 
       
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
       
 
       <div class="form-row mb-4">
@@ -582,6 +610,14 @@
             <option value="*">Type</option>
             
             
+            <option value=".pubtype-0">
+              Uncategorized
+            </option>
+            
+            <option value=".pubtype-3">
+              Preprint
+            </option>
+            
           </select>
         </div>
         <div class="col-auto">
@@ -589,11 +625,583 @@
             <option value="*">Date</option>
             
             
+            
+            <option value=".year-2020">
+              2020
+            </option>
+            
+            <option value=".year-2019">
+              2019
+            </option>
+            
+            
           </select>
         </div>
       </div>
 
       <div id="container-publications">
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2020">
+          
+            
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/somatic_variant/" >Somatic variant caller</a>
+    </h3>
+
+    
+    <a href="/publication/somatic_variant/" class="summary-link">
+      <div class="article-style">
+        Following the sample QC, our somatic pipeline can be performed on tumor-normal matched samples. Samples are analysed using Sanger&rsquo;s variant pipelines for exome (cgpWXS) or whole-genome sequencing (cgpWGS) in addition our inhouse pipeline that utlises Mutect2 and the GATK workflow tools.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/R-Cardenas/pipelines_clean" target="_blank" rel="noopener">
+    
+    github QC
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-0 year-2020">
+          
+            
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/qc/" >Variant QC Pipeline</a>
+    </h3>
+
+    
+    <a href="/publication/qc/" class="summary-link">
+      <div class="article-style">
+        We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  
+  <span ><a href="/author/dr-ryan-cardenas/">Dr Ryan Cardenas</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/R-Cardenas/pipelines_clean" target="_blank" rel="noopener">
+    
+    github QC
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2019">
+          
+            
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/preprint/" >An example preprint / working paper</a>
+    </h3>
+
+    
+    <a href="/publication/preprint/" class="summary-link">
+      <div class="article-style">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  
+  <span ><a href="/author/dr-ryan-cardenas/">Dr Ryan Cardenas</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+  
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://example.org" target="_blank" rel="noopener">
+    
+    Custom Link
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/preprint/" >
+      <img src="/publication/preprint/featured_hu559a5add5185b02575aa8333502ab2cc_220813_150x0_resize_q90_lanczos.jpg" alt="An example preprint / working paper">
+    </a>
+    
+  </div>
+</div>
+
+          
+        </div>
+
+        
+
+        
+          
+        
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2019">
+          
+            
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/germline_variant/" >An example preprint / working paper</a>
+    </h3>
+
+    
+    <a href="/publication/germline_variant/" class="summary-link">
+      <div class="article-style">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  
+  <span ><a href="/author/dr-ryan-cardenas/">Dr Ryan Cardenas</a></span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+  
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/#" target="_blank" rel="noopener">
+  Source Document
+</a>
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://example.org" target="_blank" rel="noopener">
+    
+    Custom Link
+  </a>
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+          
+        </div>
+
         
       </div>
 
