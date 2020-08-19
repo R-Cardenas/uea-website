@@ -1,48 +1,41 @@
 ---
-title: "An example preprint / working paper"
-authors:
-- admin
-date: "2019-04-07T00:00:00Z"
-doi: ""
+title: "Variant QC Pipeline"
+#authors:
+#- admin
+#date: "2019-04-07T00:00:00Z"
+#doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2020-09-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "something"
-publication_short: ""
+#publication: ""
+# publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping. 
+
 
 tags:
-- Source Themes
+- Other pipelines
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: '#'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+- name: github QC
+  url: https://github.com/R-Cardenas/pipelines_clean
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -62,8 +55,34 @@ projects:
 slides: example
 ---
 
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
+<br /> 
 
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+![](fastqc.jpg)
+
+---
+
+<br /> 
+
+Following the sequencing of samples, it is always essential to perform quality control (QC) steps prior to the main analysis - a number of sequencing artefacts including read errors, adaptor/primer retention and low quality read contamination is quite common in sequencing experiments. Sequencing errors can impact  downstream analyses of samples including gene expression and single base substitutions and insertions-deletions (indels) calling. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results. 
+
+<br /> 
+
+![figure 1 - QC pipeline flowchart ](QC_pipeline.png)
+
+<br /> 
+
+
+We have developed pipelines that include the all the essential QC tools for both RNA and DNA (variant exome and WGS) sequencing experiments - summarised in figure 1. Irrespective of sample type, samples are first trimmed using TrimGalore, analysed by FastQC and aligned (cgpMAP and HISAT2 for DNA and RNA, respectively). The picard toolkit suite is also used to remove PCR and optical duplicates, give read insert sizes and alignment statistics. 
+
+<br /> 
+
+
+<br /> 
+
+Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation. 
+
+<br /> 
+
+Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!! PUT IN REPORT !!
+
+
