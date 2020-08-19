@@ -5,7 +5,7 @@
     <link>/publication/</link>
       <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -14,10 +14,22 @@
     
     <item>
       <title>Somatic variant caller</title>
+      <link>/publication/germline_variant/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/germline_variant/</guid>
+      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Put in infor here&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Somatic variant caller</title>
       <link>/publication/somatic_variant/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       <guid>/publication/somatic_variant/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Put in infor here&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -37,7 +49,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!! PUT IN REPORT !!&lt;/p&gt;
+&lt;p&gt;Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!!&lt;/p&gt;
+&lt;p&gt;PUT IN REPORT !!&lt;/p&gt;
 </description>
     </item>
     
