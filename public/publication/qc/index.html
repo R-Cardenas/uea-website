@@ -644,14 +644,8 @@
 
 
   
-    
-  
 
 
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
@@ -723,9 +717,9 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="http://example.org" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/R-Cardenas/pipelines_clean" target="_blank" rel="noopener">
     
-    Custom Link
+    github
   </a>
 
 
@@ -766,13 +760,19 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><div class="alert alert-note">
-  <div>
-    Click the <em>Slides</em> button above to demo Academic&rsquo;s Markdown slides feature.
-  </div>
-</div>
-<p>Supplementary notes can be added here, including 
-<a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank" rel="noopener">code and math</a>.</p>
+    <div class="article-style"><p><br /></p>
+<p><img src="fastqc.jpg" alt=""></p>
+<p><br /></p>
+<p>Following the sequencing of samples, it is always essential to perform quality control (QC) steps prior to the main analysis - a number of sequencing artefacts including read errors, adaptor/primer retention and low quality read contamination is quite common in sequencing experiments. Sequencing errors can impact  downstream analyses of samples including gene expression and single base substitutions and insertions-deletions (indels) calling. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results.</p>
+<p><br /></p>
+<p><img src="QC_pipeline.png" alt="figure 1 - QC pipeline flowchart "></p>
+<p><br /></p>
+<p>We have developed pipelines that include the all the essential QC tools for both RNA and DNA (variant exome and WGS) sequencing experiments - summarised in figure 1. Irrespective of sample type, samples are first trimmed using TrimGalore, analysed by FastQC and aligned (cgpMAP and HISAT2 for DNA and RNA, respectively). The picard toolkit suite is also used to remove PCR and optical duplicates, give read insert sizes and alignment statistics.</p>
+<p><br /></p>
+<p><br /></p>
+<p>Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation.</p>
+<p><br /></p>
+<p>Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!! PUT IN REPORT !!</p>
 </div>
 
     
@@ -782,7 +782,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/source-themes/">Source Themes</a>
+  <a class="badge badge-light" href="/tag/pipelines/">Pipelines</a>
   
 </div>
 
@@ -1012,6 +1012,15 @@
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/qc/">Quality Control Pipeline</a></li>
+      
+    </ul>
+  </div>
   
 
 
