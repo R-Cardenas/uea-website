@@ -53,7 +53,7 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
 &lt;em&gt;Figure 2 - an exmaple of SIFT prediction of deleteriousness for variants. Part of the germline variant pipeline.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found 
-&lt;a href=&#34;&#34;&gt;here&lt;/a&gt; in the Cholesteatoma project we have recently processed (as of Sept 2020).&lt;/p&gt;
+&lt;a href=&#34;https://uea-med-pipelines.netlify.app/project/external_project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; in the Cholesteatoma project we have recently processed (as of Sept 2020).&lt;/p&gt;
 </description>
     </item>
     
