@@ -62,15 +62,27 @@ projects:
 slides: example
 ---
 
-<br /> 
+![Figure 1 - flowchart depicting UEA MED genomics germline. pipeline](flowchart.png)
 
-After samples have passed QC and have been mapped, samples can be analysed using our germline variant pipeline - both exome and whole genome sequencing (WGS). For familial based analysis, pedigree (PED) files can also be supplied to allow overlaps between affected/unaffected family members. The germline variant pipeline is composed of 3 main parts; the first 2 parts analyses files using 2 independent variant callers; GATK Haplotype caller and Freebayes.
-
-<br /> 
-
-Both GATK and the Freebayes submodule of the pipeline were created in-house. The GATK module includes all the reccomennded tools described from the [Germline short variant discovery (SNPs + Indels workflow)](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-). This module automates 11 processes including recalibration against known common variants, variant calling (HaplotypeCaller), convolutional neural network variant scoring and filtering  to produce a list of high quality variants. In contrast, the Freebayes module utilises a bayesian  approach which then filters variants based on quality scores and depth (https://github.com/ekg/freebayes).
+*Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.*
 
 <br /> 
 
+Once samples have passed the quality checks performed by our QC pipeline, samples can be analysed using our germline variant discovery pipeline. This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members. This pipeline utilises 2 independent variant callers; GATK Haplotype caller and Freebayes (figure 1).
+
+
+The GATK module includes all the recommended tools described from the [Germline short variant discovery (SNPs + Indels workflow)](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-). This module automates 11 processes including recalibration against known common variants, variant calling (HaplotypeCaller), convolutional neural network variant scoring and filtering  to produce a list of high quality variants. In contrast, our Freebayes module utilises a bayesian  approach which then filters variants based on quality scores and depth (https://github.com/ekg/freebayes).
+
+
+<br /> 
+
+{{< load-plotly >}}
+{{< plotly json="plotly2.json" height="600px" >}}
+*Figure 2 - an exmaple of SIFT prediction of deleteriousness for variants. Part of the germline variant pipeline.*
+
+
+<br /> 
+
+Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found [here]() in the Cholesteatoma project we have recently processed (as of Sept 2020).
 
 

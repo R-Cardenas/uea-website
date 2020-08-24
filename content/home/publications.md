@@ -7,7 +7,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 2  # Order that this section will appear.
 
-title = "Currently available pipelines"
+title = "Available pipelines"
 subtitle = ""
 
 [content]
@@ -29,7 +29,7 @@ subtitle = ""
     category = ""
     publication_type = ""
     author = ""
-    exclude_featured = false
+    exclude_featured = true
   
 [design]
   # Toggle between the various page layout types.
@@ -46,7 +46,7 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
     
   # Background color.
-   color = "navy"
+   color = "black"
   
   # Background gradient.
    gradient_start = "DeepSkyBlue"
@@ -54,10 +54,10 @@ subtitle = ""
   
   # Background image.
    image = "background.jpg"  # Name of image in `static/img/`.
-   image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+   image_darken = 0.1  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = true  
+  # text_color_light = false  
   
 [advanced]
  # Custom CSS. 

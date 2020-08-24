@@ -9,14 +9,18 @@
   weight = 10
 
 [[main]]
+  name = "Pipelines"
+  url = "#publications"
+  weight = 15
+
+[[main]]
   name = "Projects"
   url = "#projects"
   weight = 20
 
-
 [[main]]
-  name = "Publications"
-  url = "#featured"
+  name = "The Team"
+  url = "#people"
   weight = 40
 
 [[main]]

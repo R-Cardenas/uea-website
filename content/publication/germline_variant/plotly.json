@@ -1,0 +1,415 @@
+{
+  "data": [
+    {
+      "orientation": "v",
+      "width": [
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.899999999999999,
+        0.899999999999999,
+        0.899999999999999,
+        0.899999999999999
+      ],
+      "base": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "x": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "y": [
+        1219,
+        320,
+        76,
+        55,
+        20,
+        15,
+        14,
+        13,
+        12
+      ],
+      "text": [
+        "reorder(Consequence, -n): frameshift_variant<br />n: 1219<br />SIFT: -",
+        "reorder(Consequence, -n): stop_gained<br />n:  320<br />SIFT: -",
+        "reorder(Consequence, -n): stop_lost<br />n:   76<br />SIFT: -",
+        "reorder(Consequence, -n): stop_gained,frameshift_variant<br />n:   55<br />SIFT: -",
+        "reorder(Consequence, -n): frameshift_variant,splice_region_variant<br />n:   20<br />SIFT: -",
+        "reorder(Consequence, -n): stop_gained,splice_region_variant<br />n:   15<br />SIFT: -",
+        "reorder(Consequence, -n): protein_altering_variant<br />n:   14<br />SIFT: -",
+        "reorder(Consequence, -n): start_lost<br />n:   13<br />SIFT: -",
+        "reorder(Consequence, -n): frameshift_variant,start_lost<br />n:   12<br />SIFT: -"
+      ],
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "-",
+      "legendgroup": "-",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [
+        0.9,
+        0.9
+      ],
+      "base": [
+        276,
+        35
+      ],
+      "x": [
+        2,
+        6
+      ],
+      "y": [
+        1417,
+        32
+      ],
+      "text": [
+        "reorder(Consequence, -n): missense_variant<br />n: 1417<br />SIFT: deleterious",
+        "reorder(Consequence, -n): missense_variant,splice_region_variant<br />n:   32<br />SIFT: deleterious"
+      ],
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(255,127,14,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "deleterious",
+      "legendgroup": "deleterious",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "orientation": "v",
+      "width": [
+        0.9,
+        0.9
+      ],
+      "base": [
+        0,
+        0
+      ],
+      "x": [
+        2,
+        6
+      ],
+      "y": [
+        276,
+        35
+      ],
+      "text": [
+        "reorder(Consequence, -n): missense_variant<br />n:  276<br />SIFT: deleterious_low_confidence",
+        "reorder(Consequence, -n): missense_variant,splice_region_variant<br />n:   35<br />SIFT: deleterious_low_confidence"
+      ],
+      "type": "bar",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(44,160,44,1)",
+        "line": {
+          "width": 1.88976377952756,
+          "color": "transparent"
+        }
+      },
+      "name": "deleterious_low_confidence",
+      "legendgroup": "deleterious_low_confidence",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 27.1589652393787,
+      "r": 7.30593607305936,
+      "b": 137.780359979551,
+      "l": 48.9497716894977
+    },
+    "plot_bgcolor": "rgba(235,235,235,1)",
+    "paper_bgcolor": "rgba(255,255,255,1)",
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.6118721461187
+    },
+    "xaxis": {
+      "domain": [
+        0,
+        1
+      ],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [
+        0.4,
+        11.6
+      ],
+      "tickmode": "array",
+      "ticktext": [
+        "frameshift_variant",
+        "missense_variant",
+        "stop_gained",
+        "stop_lost",
+        "stop_gained,frameshift_variant",
+        "missense_variant,splice_region_variant",
+        "frameshift_variant,splice_region_variant",
+        "stop_gained,splice_region_variant",
+        "protein_altering_variant",
+        "start_lost",
+        "frameshift_variant,start_lost"
+      ],
+      "tickvals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "categoryorder": "array",
+      "categoryarray": [
+        "frameshift_variant",
+        "missense_variant",
+        "stop_gained",
+        "stop_lost",
+        "stop_gained,frameshift_variant",
+        "missense_variant,splice_region_variant",
+        "frameshift_variant,splice_region_variant",
+        "stop_gained,splice_region_variant",
+        "protein_altering_variant",
+        "start_lost",
+        "frameshift_variant,start_lost"
+      ],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": -45,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [
+        0,
+        1
+      ],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [
+        -84.65,
+        1777.65
+      ],
+      "tickmode": "array",
+      "ticktext": [
+        "0",
+        "500",
+        "1000",
+        "1500"
+      ],
+      "tickvals": [
+        0,
+        500,
+        1000,
+        1500
+      ],
+      "categoryorder": "array",
+      "categoryarray": [
+        "0",
+        "500",
+        "1000",
+        "1500"
+      ],
+      "nticks": null,
+      "ticks": "outside",
+      "tickcolor": "rgba(51,51,51,1)",
+      "ticklen": 3.65296803652968,
+      "tickwidth": 0.66417600664176,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "tickangle": 0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(255,255,255,1)",
+      "gridwidth": 0.66417600664176,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "Number of Variants",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": true,
+    "legend": {
+      "bgcolor": "rgba(255,255,255,1)",
+      "bordercolor": "transparent",
+      "borderwidth": 1.88976377952756,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716895
+      },
+      "y": 1.2,
+      "orientation": "h",
+      "x": 0
+    },
+    "annotations": [
+      {
+        "text": "SIFT",
+        "x": 1.02,
+        "y": 1,
+        "showarrow": false,
+        "ax": 0,
+        "ay": 0,
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.6118721461187
+        },
+        "xref": "paper",
+        "yref": "paper",
+        "textangle": 0,
+        "xanchor": "left",
+        "yanchor": "bottom",
+        "legendTitle": true
+      }
+    ],
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "2d1b41bb639b": {
+      "x": {},
+      "y": {},
+      "fill": {},
+      "type": "bar"
+    }
+  },
+  "cur_data": "2d1b41bb639b",
+  "visdat": {
+    "2d1b41bb639b": [
+      "function (y) ",
+      "x"
+    ]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": [
+    "plotly_hover",
+    "plotly_click",
+    "plotly_selected",
+    "plotly_relayout",
+    "plotly_brushed",
+    "plotly_brushing",
+    "plotly_clickannotation",
+    "plotly_doubleclick",
+    "plotly_deselect",
+    "plotly_afterplot",
+    "plotly_sunburstclick"
+  ],
+  "base_url": "https://plot.ly"
+}
