@@ -5,7 +5,7 @@
     <link>/publication-type/0/</link>
       <atom:link href="/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
     <description>0</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png</url>
       <title>0</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Germline variant caller</title>
       <link>/publication/germline_variant/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/germline_variant/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;flowchart.png&#34; alt=&#34;Figure 1 - flowchart depicting UEA MED genomics germline. pipeline&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.&lt;/em&gt;&lt;/p&gt;
@@ -48,7 +48,7 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
     <item>
       <title>Somatic variant caller</title>
       <link>/publication/somatic_variant/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/somatic_variant/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;signature.png&#34; alt=&#34;Figure - mutational signature analysis from Tumoroid cancer project&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;

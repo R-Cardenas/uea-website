@@ -5,7 +5,7 @@
     <link>/tag/pipelines/</link>
       <atom:link href="/tag/pipelines/index.xml" rel="self" type="application/rss+xml" />
     <description>Pipelines</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png</url>
       <title>Pipelines</title>
@@ -13,21 +13,9 @@
     </image>
     
     <item>
-      <title>Quality Control Pipeline</title>
-      <link>/post/qc/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/qc/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. For this project, we&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Germline variant caller</title>
       <link>/publication/germline_variant/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/germline_variant/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;flowchart.png&#34; alt=&#34;Figure 1 - flowchart depicting UEA MED genomics germline. pipeline&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.&lt;/em&gt;&lt;/p&gt;
@@ -60,7 +48,7 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
     <item>
       <title>Somatic variant caller</title>
       <link>/publication/somatic_variant/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/somatic_variant/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;signature.png&#34; alt=&#34;Figure - mutational signature analysis from Tumoroid cancer project&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -78,7 +66,7 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
     <item>
       <title>Variant QC Pipeline</title>
       <link>/publication/qc/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/qc/</guid>
       <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;fastqc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -94,6 +82,18 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!!&lt;/p&gt;
 &lt;p&gt;PUT IN MUTLIQC REPORT !!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quality Control Pipeline</title>
+      <link>/post/qc/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/qc/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;\&lt;/p&gt;
+&lt;p&gt;\&lt;/p&gt;
+&lt;p&gt;Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. For this project, we&lt;/p&gt;
 </description>
     </item>
     

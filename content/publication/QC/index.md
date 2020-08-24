@@ -1,8 +1,7 @@
 ---
 title: "Variant QC Pipeline"
-authors:
-- admin
-date: "2019-04-07T00:00:00Z"
+authors: ""
+date: "2020-09-07T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -28,16 +27,14 @@ tags:
 featured: false
 
 links:
-- name: github
-  url: https://github.com/R-Cardenas/pipelines_clean
 url_pdf: ''
-url_code: '#'
-url_dataset: '#'
-url_poster: '#'
+url_code: ''
+url_dataset: ''
+url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: '#'
-url_video: '#'
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
