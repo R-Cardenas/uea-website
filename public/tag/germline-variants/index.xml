@@ -18,9 +18,16 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       <guid>/project/external_project/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. For this project, we&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Cholesteatoma is a rare disorder that is characterised by a large mass of keratinising epithelium in the middle ear. The aetiology of the disease is large unknown, therefore the UEA MED cholesteatoma genetics team utilised whole exome sequencing to identify germline mutants that may explain these outcome. We utilised our germline variant discovery pipeline (as described in the pipeline 
+&lt;a href=&#34;https://uea-med-pipelines.netlify.app/publication/germline_variant/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;section&lt;/a&gt;) to analyse these samples. Below shows an example of some of the analyses included in the report generated for this project:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe
+  src=&#34;chole_mock_v0.1.html&#34;
+  style=&#34;width:100%; height:600px;&#34;
+&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     

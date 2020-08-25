@@ -31,7 +31,8 @@ slides: example
 
 <br />
 
-Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures that were patient matched to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines [section](https://uea-med-pipelines.netlify.app/publication/somatic_variant/), the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Results were summarised in the html report shown below:
+Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequence from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines [section](https://uea-med-pipelines.netlify.app/publication/somatic_variant/), the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Below shows an example of some summary results produced by this project:
+
 
 <br />
 
