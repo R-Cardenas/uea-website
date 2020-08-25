@@ -21,10 +21,11 @@ organizations:
 bio: Bio
 
 interests:
-- Non-coding genome biology
+- Epigenetics
 - Bioinformatics
 - Cancer
 - Statistics and modelling
+- Containerisation technologies
 
 
 # Social/Academic Networking
@@ -60,7 +61,6 @@ user_groups:
 
 ---
 
-Insert bio ryan...
-
+I completed my PhD in 2017 at the University of Nottingham in Cancer biology where I utilised the TCGA resources to investigate potential therapeutic microRNA targets to be tested on cell lines in the lab. This was followed by a postdoctoral position at the University of Birmingham which focused upon characterising the non-coding parts (lncRNA, eRNA, etc) of the genome utilising zebrafish as a model organism. This position facilitated my understanding in a wide range of sequencing technologies and analyses; including CAGE, ChIP, ATAC and RNA-seq. Since starting my position at UEA, I have continued to develop my skills in bioinformatics and analysing samples for DNA variants. Facilitating this, I have developed skills in pipelining programming languages including Nextflow and Snakemake, with integration into containerisation technology such as Singularity. 
 
 

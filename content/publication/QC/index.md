@@ -66,11 +66,13 @@ slides: example
 
 <br /> 
 
-Following the sequencing of samples, it is always essential to perform quality control (QC) steps prior to the main analysis - a number of sequencing artefacts including read errors, adaptor/primer retention and low quality read contamination is quite common in sequencing experiments. Sequencing errors can impact  downstream analyses of samples including gene expression and single base substitutions and insertions-deletions (indels) calling. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results. 
+Quality control (QC) is an essential step in any NGS experiment, there a number of sequencing artefacts such as read errors, primer/adapter contamination, PCR/optical read duplication are quite common. Failure to remove such artefacts can greatly and negatively impact upon downstream analyses and produce errouneous conclusions. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results. 
 
 <br /> 
 
 ![figure 1 - QC pipeline flowchart ](QC_pipeline.png)
+
+*Figure 1 - QC pipeline flowchart.*
 
 <br /> 
 
@@ -79,13 +81,11 @@ We have developed pipelines that include the all the essential QC tools for both
 
 <br /> 
 
-
-<br /> 
-
 Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation. 
 
 <br /> 
 
-Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!! 
+Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is [here](https://multiqc.info/examples/wgs/multiqc_report.html#qualimap). If samples pass QC, they will progress onto their chosen downstream analysis - such as the germline or somatic variant discovery pipelines.
 
-PUT IN MUTLIQC REPORT !!
+
+

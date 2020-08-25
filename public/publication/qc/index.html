@@ -228,8 +228,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/publication/qc/">
 
@@ -252,8 +252,8 @@
   <meta property="og:site_name" content="UEA MED Genomics Pipelines">
   <meta property="og:url" content="/publication/qc/">
   <meta property="og:title" content="Variant QC Pipeline | UEA MED Genomics Pipelines">
-  <meta property="og:description" content="We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping."><meta property="og:image" content="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping."><meta property="og:image" content="/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2017-01-01T00:00:00&#43;00:00">
@@ -297,7 +297,7 @@
     "name": "University of East Anglia",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_192x192_fill_lanczos_center_2.png"
+      "url": "/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_192x192_fit_lanczos_2.png"
     }
   },
   "description": "We have developed quality control (QC) pipelines that automate a number of tools to ensure sample fidelity. This pipeline processes samples from RNA-seq and DNA-seq (exome and WGS) followed by mapping."
@@ -364,13 +364,15 @@
 
 
 
+  
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">UEA MED Genomics Pipelines</a>
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_0x70_resize_lanczos_2.png" alt="UEA MED Genomics Pipelines"></a>
     </div>
     
 
@@ -383,7 +385,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">UEA MED Genomics Pipelines</a>
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_0x70_resize_lanczos_2.png" alt="UEA MED Genomics Pipelines"></a>
     </div>
     
 
@@ -726,17 +728,17 @@
     <div class="article-style"><p><br /></p>
 <p><img src="fastqc.jpg" alt=""></p>
 <p><br /></p>
-<p>Following the sequencing of samples, it is always essential to perform quality control (QC) steps prior to the main analysis - a number of sequencing artefacts including read errors, adaptor/primer retention and low quality read contamination is quite common in sequencing experiments. Sequencing errors can impact  downstream analyses of samples including gene expression and single base substitutions and insertions-deletions (indels) calling. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results.</p>
+<p>Quality control (QC) is an essential step in any NGS experiment, there a number of sequencing artefacts such as read errors, primer/adapter contamination, PCR/optical read duplication are quite common. Failure to remove such artefacts can greatly and negatively impact upon downstream analyses and produce errouneous conclusions. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results.</p>
 <p><br /></p>
 <p><img src="QC_pipeline.png" alt="figure 1 - QC pipeline flowchart "></p>
+<p><em>Figure 1 - QC pipeline flowchart.</em></p>
 <p><br /></p>
 <p>We have developed pipelines that include the all the essential QC tools for both RNA and DNA (variant exome and WGS) sequencing experiments - summarised in figure 1. Irrespective of sample type, samples are first trimmed using TrimGalore, analysed by FastQC and aligned (cgpMAP and HISAT2 for DNA and RNA, respectively). The picard toolkit suite is also used to remove PCR and optical duplicates, give read insert sizes and alignment statistics.</p>
 <p><br /></p>
-<p><br /></p>
 <p>Additional tools have been included to estimate the levels of contamination (verifyBAMID), relatedness scores and ancestry estimation in DNA-seq samples (Somalier) - shown in figure 2. These analsyes allow the identification of samples that may have been mislabelled, contaminated or degraded thus preventing errouneous result interepretation.</p>
 <p><br /></p>
-<p>Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is shown below (for a fully interactive html report click here)!!!</p>
-<p>PUT IN MUTLIQC REPORT !!</p>
+<p>Once all analyses have been performed, multiQC is used to create QC plots reporting results in an easy and digestible format. An example of a multiQC report is 
+<a href="https://multiqc.info/examples/wgs/multiqc_report.html#qualimap" target="_blank" rel="noopener">here</a>. If samples pass QC, they will progress onto their chosen downstream analysis - such as the germline or somatic variant discovery pipelines.</p>
 </div>
 
     
