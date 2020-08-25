@@ -30,17 +30,16 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       <guid>/project/internal_project/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;\&lt;/p&gt;
-&lt;p&gt;Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. For this project, we&lt;/p&gt;
-&lt;div class=&#34;responsive-wrap&#34;&gt;
-	&lt;object data=&#34;tumoroid_mock_v0.1.pdf&#34; type=&#34;application/pdf&#34; style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-		&lt;embed src=&#34;tumoroid_mock_v0.1.pdf&#34; type=&#34;application/pdf &#34;style=&#34;margin: 0 auto;height: 100vh;width: 100%;&#34;&gt;
-			&lt;em&gt;It seems that your browser cannot display the PDF file; Please use this &lt;a href=&#34;tumoroid_mock_v0.1.pdf&#34;&gt;&lt;strong&gt;link&lt;/strong&gt; &lt;/a&gt;
-			instead. Thanks!&lt;/em&gt;
-	&lt;/object&gt;
-&lt;/div&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures that were patient matched to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines 
+&lt;a href=&#34;https://uea-med-pipelines.netlify.app/publication/somatic_variant/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;section&lt;/a&gt;, the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Results were summarised in the html report shown below:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe
+  src=&#34;tumoroid_mock_v0.1.html&#34;
+  style=&#34;width:100%; height:600px;&#34;
+&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     

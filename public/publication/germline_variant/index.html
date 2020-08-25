@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="Our germline variant calling pipeline has been created in-house utilising Freebayes in addition to the GATK haplotype caller workflow. We use this in combination with Ensembl&#39;s variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants.">
+  <meta name="description" content="Our germline variant calling pipeline has been created in-house utilising Freebayes and the GATK rare variant discover workflow. We use this in combination with Ensembl&#39;s variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants.">
 
   
   <link rel="alternate" hreflang="en-us" href="/publication/germline_variant/">
@@ -252,7 +252,7 @@
   <meta property="og:site_name" content="UEA MED Genomics Pipelines">
   <meta property="og:url" content="/publication/germline_variant/">
   <meta property="og:title" content="Germline variant caller | UEA MED Genomics Pipelines">
-  <meta property="og:description" content="Our germline variant calling pipeline has been created in-house utilising Freebayes in addition to the GATK haplotype caller workflow. We use this in combination with Ensembl&#39;s variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants."><meta property="og:image" content="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Our germline variant calling pipeline has been created in-house utilising Freebayes and the GATK rare variant discover workflow. We use this in combination with Ensembl&#39;s variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants."><meta property="og:image" content="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -300,7 +300,7 @@
       "url": "/images/icon_huae0f1a26bea34e0d96985e34aa3de8bd_277_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Our germline variant calling pipeline has been created in-house utilising Freebayes in addition to the GATK haplotype caller workflow. We use this in combination with Ensembl's variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants."
+  "description": "Our germline variant calling pipeline has been created in-house utilising Freebayes and the GATK rare variant discover workflow. We use this in combination with Ensembl's variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants."
 }
 </script>
 
@@ -704,10 +704,14 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p><img src="flowchart.png" alt="Figure 1 - flowchart depicting UEA MED genomics germline. pipeline"></p>
-<p><em>Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.</em></p>
+    <div class="article-style"><img src="brca.png" alt="drawing" style="width:500px;"/>
+<p><em>Figure 1 - An example of inheritance of the genetically dominant BRCA mutation.</em></p>
 <p><br /></p>
-<p>Once samples have passed the quality checks performed by our QC pipeline, samples can be analysed using our germline variant discovery pipeline. This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members. This pipeline utilises 2 independent variant callers; GATK Haplotype caller and Freebayes (figure 1).</p>
+<p>A germline mutation is characterised by a change in bases that are occur within the gamete cells, thus resulting in these mutations to be present in every somatic cell of an individual. Given that germline mutagenesis is a fundamental biological process driving heritable genetic variation, identifying germline variant which attribute to a particular disease can be a challenging task. We have developed a germline variant discovery pipeline that utilises two independent variant callers; GATK Haplotype caller and Freebayes (figure 2). This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members.</p>
+<p><br /></p>
+<p><img src="flowchart.png" alt="Figure 2 - flowchart depicting UEA MED genomics germline. pipeline"></p>
+<p><em>Figure 2 - A flowchart depicting UEA MED genomics QC and germline pipeline.</em></p>
+<p><br /></p>
 <p>The GATK module includes all the recommended tools described from the 
 <a href="https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-" target="_blank" rel="noopener">Germline short variant discovery (SNPs + Indels workflow)</a>. This module automates 11 processes including recalibration against known common variants, variant calling (HaplotypeCaller), convolutional neural network variant scoring and filtering  to produce a list of high quality variants. In contrast, our Freebayes module utilises a bayesian  approach which then filters variants based on quality scores and depth (<a href="https://github.com/ekg/freebayes)">https://github.com/ekg/freebayes)</a>.</p>
 <p><br /></p>
@@ -729,6 +733,8 @@ Plotly.d3.json("plotly2.json", function(err, fig) {
 <p><br /></p>
 <p>Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found 
 <a href="https://uea-med-pipelines.netlify.app/project/external_project/" target="_blank" rel="noopener">here</a> in the Cholesteatoma project we have recently processed (as of Sept 2020).</p>
+<p><br /></p>
+<p><br /></p>
 </div>
 
     

@@ -14,10 +14,6 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -33,17 +29,21 @@ slides: example
 
 ## Introduction
 
-\
+<br />
 
-\
+Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures that were patient matched to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines [section](https://uea-med-pipelines.netlify.app/publication/somatic_variant/), the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Results were summarised in the html report shown below:
 
-Dr Mark Williams provided us with high quality DNA-exome sequence from 3D culture tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. For this project, we 
+<br />
+
+<br />
+
+<iframe
+  src="tumoroid_mock_v0.1.html"
+  style="width:100%; height:600px;"
+></iframe>
 
 
-
-
-{{< embedpdf url="tumoroid_mock_v0.1.pdf" >}}
-
+<br />
 
 
 

@@ -17,10 +17,14 @@
       <link>/publication/germline_variant/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/publication/germline_variant/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;flowchart.png&#34; alt=&#34;Figure 1 - flowchart depicting UEA MED genomics germline. pipeline&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;img src=&#34;brca.png&#34; alt=&#34;drawing&#34; style=&#34;width:500px;&#34;/&gt;
+&lt;p&gt;&lt;em&gt;Figure 1 - An example of inheritance of the genetically dominant BRCA mutation.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Once samples have passed the quality checks performed by our QC pipeline, samples can be analysed using our germline variant discovery pipeline. This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members. This pipeline utilises 2 independent variant callers; GATK Haplotype caller and Freebayes (figure 1).&lt;/p&gt;
+&lt;p&gt;A germline mutation is characterised by a change in bases that are occur within the gamete cells, thus resulting in these mutations to be present in every somatic cell of an individual. Given that germline mutagenesis is a fundamental biological process driving heritable genetic variation, identifying germline variant which attribute to a particular disease can be a challenging task. We have developed a germline variant discovery pipeline that utilises two independent variant callers; GATK Haplotype caller and Freebayes (figure 2). This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;flowchart.png&#34; alt=&#34;Figure 2 - flowchart depicting UEA MED genomics germline. pipeline&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure 2 - A flowchart depicting UEA MED genomics QC and germline pipeline.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The GATK module includes all the recommended tools described from the 
 &lt;a href=&#34;https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Germline short variant discovery (SNPs + Indels workflow)&lt;/a&gt;. This module automates 11 processes including recalibration against known common variants, variant calling (HaplotypeCaller), convolutional neural network variant scoring and filtering  to produce a list of high quality variants. In contrast, our Freebayes module utilises a bayesian  approach which then filters variants based on quality scores and depth (&lt;a href=&#34;https://github.com/ekg/freebayes)&#34;&gt;https://github.com/ekg/freebayes)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -42,6 +46,8 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found 
 &lt;a href=&#34;https://uea-med-pipelines.netlify.app/project/external_project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; in the Cholesteatoma project we have recently processed (as of Sept 2020).&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -52,14 +58,14 @@ Plotly.d3.json(&#34;plotly2.json&#34;, function(err, fig) {
       <guid>/publication/somatic_variant/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;signature.png&#34; alt=&#34;Figure - mutational signature analysis from Tumoroid cancer project&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;After samples have passed QC and have been mapped, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines.. This pipeline is composed of 3 main parts; the first 2 parts analyses files using 2 independent variant callers from Sanger and GATK.&lt;/p&gt;
+&lt;p&gt;After samples have passed QC, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines. This pipeline utilises 2 independent variant callers from Sanger and GATK.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The Sanger pipelines cgpWXS and cgpWGS were designed for exome and WGS, respectively (&lt;a href=&#34;https://github.com/cancerit)&#34;&gt;https://github.com/cancerit)&lt;/a&gt;. Both Sanger pipelines utilise CAVeMAN and Pindel to call single base substitutions (SBSs) and insertions-deletions (indels) which are annotated by VAGrENT. CgpWGS also includes BRASS and ascatNgs for breakpoint and copy number analysis. Both tools identify high quality variants that are used downstream for further analysis.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;The GATK pipeline was developed in-house and include all the reccomennded tools described in the the  
 &lt;a href=&#34;https://gatk.broadinstitute.org/hc/en-us/articles/360035889791--How-to-Call-somatic-mutations-using-GATK4-Mutect2-Deprecated-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mutect2 GATK workflow&lt;/a&gt;. This pipeline automates 10 processes including recalibration against known common variants, variant calling (mutect2), contamination calculation and filtering variants to produce a list of high quality variants.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;The final part of our pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](put inthe hhtps when ready)&lt;/p&gt;
+&lt;p&gt;The final part of the somatic variant pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](put inthe hhtps when ready)&lt;/p&gt;
 </description>
     </item>
     

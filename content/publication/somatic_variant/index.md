@@ -65,7 +65,7 @@ slides: example
 
 <br /> 
 
-After samples have passed QC and have been mapped, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines.. This pipeline is composed of 3 main parts; the first 2 parts analyses files using 2 independent variant callers from Sanger and GATK.  
+After samples have passed QC, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines. This pipeline utilises 2 independent variant callers from Sanger and GATK.
 
 <br /> 
 
@@ -77,5 +77,5 @@ The GATK pipeline was developed in-house and include all the reccomennded tools 
 
 <br /> 
 
-The final part of our pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](put inthe hhtps when ready) 
+The final part of the somatic variant pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](put inthe hhtps when ready) 
 

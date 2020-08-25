@@ -20,7 +20,7 @@ publication_short: ""
 abstract: 
 
 # Summary. An optional shortened abstract.
-summary: Our germline variant calling pipeline has been created in-house utilising Freebayes in addition to the GATK haplotype caller workflow. We use this in combination with Ensembl's variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants.
+summary: Our germline variant calling pipeline has been created in-house utilising Freebayes and the GATK rare variant discover workflow. We use this in combination with Ensembl's variant effect predictor (VEP) and gnomAD to filter for rare and predicted deleterious variants.
 
 tags:
 - pipelines
@@ -59,14 +59,21 @@ projects:
 slides: example
 ---
 
-![Figure 1 - flowchart depicting UEA MED genomics germline. pipeline](flowchart.png)
+<img src="brca.png" alt="drawing" style="width:500px;"/>
 
-*Figure 1 - A flowchart depicting UEA MED genomics QC and germline pipeline.*
+*Figure 1 - An example of inheritance of the genetically dominant BRCA mutation.*
 
 <br /> 
 
-Once samples have passed the quality checks performed by our QC pipeline, samples can be analysed using our germline variant discovery pipeline. This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members. This pipeline utilises 2 independent variant callers; GATK Haplotype caller and Freebayes (figure 1).
+A germline mutation is characterised by a change in bases that are occur within the gamete cells, thus resulting in these mutations to be present in every somatic cell of an individual. Given that germline mutagenesis is a fundamental biological process driving heritable genetic variation, identifying germline variant which attribute to a particular disease can be a challenging task. We have developed a germline variant discovery pipeline that utilises two independent variant callers; GATK Haplotype caller and Freebayes (figure 2). This pipeline accepts both exome and whole genome sequencing data, in addition to an optional pedigree (PED) file to allow overlap between disease affected/unaffected family members.
 
+<br /> 
+
+![Figure 2 - flowchart depicting UEA MED genomics germline. pipeline](flowchart.png)
+
+*Figure 2 - A flowchart depicting UEA MED genomics QC and germline pipeline.*
+
+<br /> 
 
 The GATK module includes all the recommended tools described from the [Germline short variant discovery (SNPs + Indels workflow)](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-). This module automates 11 processes including recalibration against known common variants, variant calling (HaplotypeCaller), convolutional neural network variant scoring and filtering  to produce a list of high quality variants. In contrast, our Freebayes module utilises a bayesian  approach which then filters variants based on quality scores and depth (https://github.com/ekg/freebayes).
 
@@ -81,5 +88,9 @@ The GATK module includes all the recommended tools described from the [Germline 
 <br /> 
 
 Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found [here](https://uea-med-pipelines.netlify.app/project/external_project/) in the Cholesteatoma project we have recently processed (as of Sept 2020).
+
+<br /> 
+
+<br /> 
 
 
