@@ -7,16 +7,16 @@
     <description>Germline variants</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_300x300_fit_lanczos_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Germline variants</title>
       <link>/tag/germline-variants/</link>
     </image>
     
     <item>
       <title>Cholesteatoma - rare variant discovery</title>
-      <link>/project/external_project/</link>
+      <link>/project/cholesteatoma/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/project/external_project/</guid>
+      <guid>/project/cholesteatoma/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Cholesteatoma is a rare disorder that is characterised by a large mass of keratinising epithelium in the middle ear. The aetiology of the disease is large unknown, therefore the UEA MED cholesteatoma genetics team utilised whole exome sequencing to identify germline mutants that may explain these outcome. We utilised our germline variant discovery pipeline (as described in the pipeline 

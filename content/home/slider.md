@@ -39,8 +39,8 @@ height = "220px"
 
 [[item]]
   title = " <br />  <br /> "
-  content = ""
-  align = "right"
+  content = "Prostate cancer tissue: A single cell containing amplification of the Androgen Receptor gene - Cooper Lab"
+  align = "left"
 
   overlay_color = "#333"  # An HTML color value.
   overlay_img = "heatmap.png"  # Image path relative to your `static/img/` folder.

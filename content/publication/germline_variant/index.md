@@ -87,7 +87,7 @@ The GATK module includes all the recommended tools described from the [Germline 
 
 <br /> 
 
-Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found [here](https://uea-med-pipelines.netlify.app/project/external_project/) in the Cholesteatoma project we have recently processed (as of Sept 2020).
+Next, variants called by GATK haplotype caller and Freebayes are overlapped and annotated using variant effect predictor (VEP). Common variants are filtered using the GnomAD database for sequencing data using user define cut off values; SIFT and PolyPhen are used to predict the deleteriousness of variant (figure 2). A user-friendly html report is created providing interactive tables and plots allowing users to interrogate the new rare-variant results - an example of this report can be found [here](https://uea-med-pipelines.netlify.app/project/cholesteatoma) in the Cholesteatoma project we have recently processed (as of Sept 2020).
 
 <br /> 
 

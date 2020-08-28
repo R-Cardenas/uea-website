@@ -62,6 +62,7 @@ slides: example
 
 
 ![Figure - mutational signature analysis from Tumoroid cancer project](signature.png)
+*Figure 1 - mutational signature analysis from Tumoroid cancer project*
 
 <br /> 
 
@@ -77,5 +78,5 @@ The GATK pipeline was developed in-house and include all the reccomennded tools 
 
 <br /> 
 
-The final part of the somatic variant pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](put inthe hhtps when ready) 
+The final part of the somatic variant pipeline creates an overlap between the variants found in both Sanger and GATK variant callers. A html report is created from the results that includes annotated variants significantly different between normal and tumor samples, variant class summary (E.g. nosense, stop codon, etc) across samples, cancer drug prediction and variant allele frequencies - an example of this is shown in the colorectal cancer tumoroid project [here](https://uea-med-pipelines.netlify.app/project/tumoroid_williams/) 
 

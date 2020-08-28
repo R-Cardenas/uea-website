@@ -7,16 +7,16 @@
     <description>Somatic variants</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu5089cb47d23b8d50047ff1ec9a8ad388_44564_300x300_fit_lanczos_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Somatic variants</title>
       <link>/tag/somatic-variants/</link>
     </image>
     
     <item>
       <title>Colorectal cancer tumoroid project</title>
-      <link>/project/internal_project/</link>
+      <link>/project/tumoroid_williams/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/project/internal_project/</guid>
+      <guid>/project/tumoroid_williams/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequence from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines 
