@@ -1,6 +1,6 @@
 ---
 title: Colorectal cancer tumoroid project
-summary: This project utilised DNA-exome sequencing on colorectal tumoroid and normal organoid grown in 3D culture and were analysed for somatic mutations in order to indentify patient specific drug targets. Here we show some of the analyses run as part of our Exome and somatic variant discovery pipeline.
+summary: This project utilised DNA-exome sequencing on colorectal tumoroid and normal organoid cultures grown in 3D culture and were analysed for somatic mutations to identify patient specific drug targets. Here we show some of the analyses run as part of our Exome and somatic variant discovery pipeline.
 tags:
 - Somatic variants
 date: "2019-07-30T00:00:00Z"
@@ -31,7 +31,7 @@ slides: example
 
 <br />
 
-Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequence from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines [section](https://uea-med-pipelines.netlify.app/publication/somatic_variant/), the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Below shows an example of some summary results produced by this project:
+Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequences from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines [section](https://uea-med-pipelines.netlify.app/publication/somatic_variant/), the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to tumour samples. Below shows an example of some summary results produced by this project:
 
 
 <br />

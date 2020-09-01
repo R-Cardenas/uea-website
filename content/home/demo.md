@@ -54,12 +54,11 @@ subtitle = ""
 +++
 
 
-At UEA MED genomics we specialise in the analysis of high-throughput genomics and sequencing data. Our facility is based at the Bob Champion Research and Education Building (BCRE) within the Norwich Research Park. MED genomics provides a new service funded by UEA MED to facilitate analysis of complex sequencing datasets to aid ongoing and high impact research. 
+At UEA MED genomics we specialise in the analysis of high-throughput genomics and sequencing data. Our facility is based at the Bob Champion Research and Education Building (BCRE) within the Norwich Research Park. MED genomics provides a new service funded by UEA MED to facilitate analysis of complex sequencing datasets to aid ongoing and high impact research.
 
-We have developed pipelines  that  automate the essential steps for processing sequencing samples and to produce a user-friendly report to summarise results. All samples undergo a rigorous quality control (QC) pipeline that including FastQC and Picard tools prior to the main analysis. For DNA-sequencing, we accept both exome and whole-genome samples for the analysis of germline or somatic variants. These pipelines incorporate other well established pipelines developed at the Sanger Institute (cgpMAP, cgpWXS and cgpWGS) in addition to pipelines we have developed in-house, utilising other popular variant analysis tools (e.g. GATK and Freebayes).
+We have developed pipelines that automate the essential steps for processing sequencing samples and that produce a user-friendly report to summarise results. All samples undergo a rigorous quality control (QC) pipeline that including FastQC and Picard tools prior to the main analysis. For DNA-sequencing, we accept both exome and whole-genome samples for the analysis of germline or somatic variants. These pipelines incorporate other well-established pipelines developed at the Sanger Institute (cgpMAP, cgpWXS and cgpWGS) in addition to pipelines we have developed in-house, utilising other popular variant analysis tools (e.g. GATK and Freebayes).
 
-
-Each pipeline produces a HTML report that includes interactive tables and graphs to summarise results. Further explanation of our pipelines can be found in our pipelines section and examples of our previous projects and reports in the projects section. In addition to our current pipelines, we are open to performing bespoke analyses or creating new pipelines for chosen projects - use the contact tab to email us directly.
+Each pipeline produces a HTML report that includes interactive tables and graphs to summarise results. Further explanation of our pipelines can be found in our pipelines section and examples of our previous projects and reports in the projects section. In addition to our current pipelines, we also offer bespoke analyses upon request. For further information of this service please use the contact tab to email us directly. 
 
 
 

@@ -66,7 +66,7 @@ slides: example
 
 <br /> 
 
-Quality control (QC) is an essential step in any NGS experiment, there a number of sequencing artefacts such as read errors, primer/adapter contamination, PCR/optical read duplication are quite common. Failure to remove such artefacts can greatly and negatively impact upon downstream analyses and produce errouneous conclusions. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts are required to be filtered out to prevent inaccurate results. 
+Quality control (QC) is an essential step in any NGS experiment as there a number of common sequencing artefacts such as read errors, primer/adapter contamination, PCR/optical read duplication. Failure to remove such artefacts can negatively impact upon downstream analyses and produce erroneous conclusions. The majority of these downstream analyses do not perform filtering steps or provide tools for QC, therefore these sequencing artefacts should be filtered out to prevent inaccurate results.
 
 <br /> 
 

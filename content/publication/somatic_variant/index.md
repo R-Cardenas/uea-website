@@ -66,7 +66,7 @@ slides: example
 
 <br /> 
 
-After samples have passed QC, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines. This pipeline utilises 2 independent variant callers from Sanger and GATK.
+After samples have passed QC, tumor-normal matched samples can be analysed using our somatic variant pipeline - both exome and whole genome sequencing (WGS) is supported with these pipelines. This pipeline utilises two independent variant callers from Sanger and GATK.
 
 <br /> 
 
@@ -74,7 +74,7 @@ The Sanger pipelines cgpWXS and cgpWGS were designed for exome and WGS, respecti
 
 <br /> 
  
-The GATK pipeline was developed in-house and include all the reccomennded tools described in the the  [mutect2 GATK workflow](https://gatk.broadinstitute.org/hc/en-us/articles/360035889791--How-to-Call-somatic-mutations-using-GATK4-Mutect2-Deprecated-). This pipeline automates 10 processes including recalibration against known common variants, variant calling (mutect2), contamination calculation and filtering variants to produce a list of high quality variants.
+The GATK pipeline was developed in-house and includes the recommended tools described in the the  [mutect2 GATK workflow](https://gatk.broadinstitute.org/hc/en-us/articles/360035889791--How-to-Call-somatic-mutations-using-GATK4-Mutect2-Deprecated-). This pipeline automates 10 processes including recalibration against known common variants, variant calling (mutect2), contamination calculation and filtering variants to produce a list of high quality variants.
 
 <br /> 
 

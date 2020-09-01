@@ -1,6 +1,6 @@
 ---
 title: Cholesteatoma - rare variant discovery
-summary: Cholesteatoma is a rare disease that results in cyct-like growths in the inner ear. In order to gain further understanding into to aetiology of the disease, 9 families exomes were sequenced. Here we show some of the analyses run as part of our germline variant discovery pipeline.
+summary:Cholesteatoma is a rare disease that results in cyst-like growths in the inner ear. In order to gain further understanding into the aetiology of the disease, nine family’s exomes were sequenced. Here we show some of the analyses run as part of our germline variant discovery pipeline.
 tags:
 - Germline variants
 date: "2019-07-30T00:00:00Z"
@@ -30,7 +30,7 @@ slides: example
 
 <br />
 
-Cholesteatoma is a rare disorder that is characterised by a large mass of keratinising epithelium in the middle ear. The aetiology of the disease is large unknown, therefore the UEA MED cholesteatoma genetics team utilised whole exome sequencing to identify germline mutants that may explain these outcome. We utilised our germline variant discovery pipeline (as described in the pipeline [section](https://uea-med-pipelines.netlify.app/publication/germline_variant/)) to analyse these samples. Below shows an example of some of the analyses included in the report generated for this project:
+Cholesteatoma is a rare disorder that is characterised by a large mass of keratinising epithelium in the middle ear. The aetiology of the disease is largely unknown, therefore the UEA MED cholesteatoma genetics team utilised whole exome sequencing to identify germline mutants that may explain these clinical outcomes. We utilised our germline variant discovery pipeline (as described in the pipeline [section](https://uea-med-pipelines.netlify.app/publication/germline_variant/)) to analyse these samples. Below shows an example of some of the analyses included in the report generated for this project:
 
 
 <br />
