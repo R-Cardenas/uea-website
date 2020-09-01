@@ -1,6 +1,6 @@
 ---
 title: Cholesteatoma - rare variant discovery
-summary:Cholesteatoma is a rare disease that results in cyst-like growths in the inner ear. In order to gain further understanding into the aetiology of the disease, nine family’s exomes were sequenced. Here we show some of the analyses run as part of our germline variant discovery pipeline.
+summary: Cholesteatoma is a rare disease that results in cyst-like growths in the inner ear. In order to gain further understanding into the aetiology of the disease, nine family’s exomes were sequenced. Here we show some of the analyses run as part of our germline variant discovery pipeline.
 tags:
 - Germline variants
 date: "2019-07-30T00:00:00Z"
