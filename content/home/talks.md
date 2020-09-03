@@ -83,4 +83,4 @@ subtitle = ""
 
 ## Expert advice and Training
 
-At UEA-MED genomics we are experts in next generation sequencing and analysis and we are here to provide advice and if required training. We are experienced bioinformaticians and stataticians with a background in biology (see [our team](#people)). We can offer one-to-one consulation to help you with your computational needs. For more information please us the contact us using the form below.
+At UEA-MED genomics we are experts in next generation sequencing and analysis and we are here to provide advice and if required training. We are experienced bioinformaticians and statisticians with a background in biology (see [our team](#people)). We can offer one-to-one consulation to help you with your analysis needs. For more information please us the contact us using the form below.
