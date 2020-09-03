@@ -3,11 +3,11 @@
 # This section displays recent talks from `content/talk/`.
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+headless = false  # This file represents a page section.
+active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
-title = "Recent & Upcoming Talks"
+title = "Training and consultation"
 subtitle = ""
 
 [content]
@@ -68,3 +68,17 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
+## Providing bioinformatics tools, analysis and advice for research
+
+## Our services
+
+- Pipeline development
+- Bioinformatics analysis
+- Training
+- Statistics
+- Consulatancy
+
+## Expert advice and Training
+
+At UEA-MED genomics we are experts in next generation sequencing and analysis and we are here to provide advice and if required training. We are experienced bioinformaticians and stataticians with a background in biology (see [our team](#people)). We can offer one-to-one consulation to help you with your computational needs. For more information please us the contact us using the form below.
