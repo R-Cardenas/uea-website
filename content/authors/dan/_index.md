@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Research Group Member - Cancer Studies
+role: Team Leader - Cancer Studies
 
 # Organizations/Affiliations
 organizations:
