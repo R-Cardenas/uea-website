@@ -71,6 +71,8 @@ subtitle = ""
 
 ## Providing bioinformatics tools, analysis and advice for research
 
+<br />
+
 ## Our services
 
 - Pipeline development
