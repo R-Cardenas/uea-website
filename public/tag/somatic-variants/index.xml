@@ -19,8 +19,8 @@
       <guid>/project/tumoroid_williams/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequence from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines 
-&lt;a href=&#34;https://uea-med-pipelines.netlify.app/publication/somatic_variant/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;section&lt;/a&gt;, the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to the tumor samples. Below shows an example of some summary results produced by this project:&lt;/p&gt;
+&lt;p&gt;Dr Mark Williams and his team are interested in the genetics of colorectal cancer, utilising complex 3D culturing techniques to identify potentially novel and effective treatment strategies. Dr Williams provided us with high quality DNA-exome sequences from patient matched tumoroid and organoid cultures to be processed by our somatic variant discovery pipeline. As described in our somatic pipelines 
+&lt;a href=&#34;https://uea-med-pipelines.netlify.app/publication/somatic_variant/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;section&lt;/a&gt;, the sanger cgpWXS and GATK mutect2 tools were utilised to identify high confidence variants specific to tumour samples. Below shows an example of some summary results produced by this project:&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;iframe

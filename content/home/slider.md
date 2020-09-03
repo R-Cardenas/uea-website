@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-font_size_min = 0.7
-font_size_max = 1.0
+font_size_min = 0.01
+font_size_max = 0.01
 
 # Slide interval.
 # Use `false` to disable animation or enter a time in ms, e.g. `15000` (15s).
@@ -26,7 +26,7 @@ height = "220px"
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.
   overlay_color = "#666"  # An HTML color value.
-  overlay_img = "prostate_fish.png"  # Image path relative to your `static/img/` folder.
+  overlay_img = "fish.png"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
   # Call to action button (optional).
