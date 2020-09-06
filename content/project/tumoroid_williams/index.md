@@ -10,7 +10,7 @@ external_link: ""
 
 
 image:
-  caption: ASK MARK FOR REAL PHOTOS??
+  caption: 
   focal_point: Smart
 
 links:
