@@ -79,7 +79,7 @@ subtitle = ""
 - Bioinformatics analysis
 - Training
 - Statistics
-- Consulatancy
+- Consultancy
 
 ## Expert advice and Training
 
